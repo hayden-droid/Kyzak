@@ -160,10 +160,11 @@ local uiParent = game:GetService("RunService"):IsStudio() and game:GetService("P
         Window.Name = "Window"
         Window.Parent = library.gui
         Window.AnchorPoint = Vector2.new(0.5, 0.5)
-        Window.BackgroundColor3 = Color3.new(0.137255, 0.137255, 0.137255)
+        Window.BackgroundColor3 = Color3.new(137, 81, 204)
         Window.BorderColor3 = Color3.new(0.337255, 0.337255, 0.337255)
         Window.Position = UDim2.new(0, 150 + (190 * self.WindowCount), 0, (Window.Size.Y.Offset / 2) + 50)
         Window.Size = UDim2.new(0, 180, 0, 0)
+	Window.BackgroundTransparency = 0.7
         
         WindowBG.Name = "WindowBG"
         WindowBG.Parent = Window
